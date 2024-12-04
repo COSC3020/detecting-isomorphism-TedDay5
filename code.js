@@ -15,6 +15,11 @@ function are_isomorphic(graph1, graph2) {
     seen = [];
     map = [];
 
+    for(let i = 0; i < l; i++) {
+        seen = [i] = false;
+        map = [i] = undefined;
+    }
+
     return mapping(graph1, graph2, l, map, 0, seen);
 }
 
