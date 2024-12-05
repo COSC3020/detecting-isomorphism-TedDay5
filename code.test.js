@@ -4,24 +4,23 @@ const assert = require('assert');
 eval(fs.readFileSync('code.js')+'');
 
 const graphA = [
-    [1, 2],
-    [0, 3],
-    [1, 2],
-    [0, 3]
+    [0, 1, 1, 0],
+    [1, 0, 0, 1],
+    [1, 0, 0, 1],
+    [0, 1, 1, 0]
 ]
 
 const graphB = [
-    [3, 4],
-    [3, 4],
-    [0, 2],
-    [0, 2]
+    [0, 1, 1, 0],
+    [1, 0, 0, 1],
+    [1, 0, 0, 1],
+    [0, 1, 1, 0]
 ]
 
 const graphC = [
-    [1, 2, 3],
-    [1, 2],
-    [0, 3],
-    [0, 3]
+    [1, 0, 1],
+    [0, 1, 0],
+    [1, 0, 1],
 ]
 
 assert(are_isomorphic(graphA, graphB) === true);
