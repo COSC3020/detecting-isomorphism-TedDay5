@@ -59,12 +59,12 @@ function mapping(source, target, size, vertex, current, visited) {
     }
     for(let i = 0; i < size; i++) {
         if(!visited[i]) {
-            visted[i] = true;
+            visited[i] = true;
             vertex[current] = i;
             if(mapping(source, target, size, vertex, current + 1, visited)) {
                 return true;
             }
-            visted[i] = false;
+            visited[i] = false;
         }
     }
     return false;
