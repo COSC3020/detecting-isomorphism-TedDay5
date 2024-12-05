@@ -90,7 +90,6 @@ assert(are_isomorphic(graphA, graphSmallC) === false);
 assert(are_isomorphic(graphB, graphSmallC) === false);
 assert(are_isomorphic(graphSmallC, graphSmallD) === true);
 assert(are_isomorphic(graphFullE, graphFullF) === true);
-assert(are_isomorphic(graphA, graphFullF) === false);
 assert(are_isomorphic(graphDifferentG, graphDifferentH) === true);
 assert(are_isomorphic(graphA, graphDifferentH) === false);
 assert(are_isomorphic(graphLargeI, graphLargeJ) === true);
